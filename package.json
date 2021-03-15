@@ -4,7 +4,7 @@
   "description": "Get informed of the Walmart rates daily by email in-order to stay on top of great offers on selected products. ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "keywords": [
     "walmart",
