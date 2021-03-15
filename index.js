@@ -6,7 +6,7 @@ const express = require('express');
 const app = express();
 
 // Schedule tasks to be run on the server.
-cron.schedule('40 22 * * *', function() {
+cron.schedule('10 1 * * *', function() {
     console.log('running cron job');
     puppet();
 });
