@@ -6,10 +6,10 @@ const express = require('express');
 const app = express();
 
 // Schedule tasks to be run on the server.
-cron.schedule('10 1 * * *', function() {
-    console.log('running cron job');
-    puppet();
-});
+// cron.schedule('10 1 * * *', function() {
+//     console.log('running cron job');
+//     puppet();
+// });
 
 app.listen(process.env.PORT);
 
@@ -82,4 +82,5 @@ async function puppet () {
 
     browser.close();
 }
+puppet();
 
