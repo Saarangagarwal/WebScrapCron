@@ -5,11 +5,11 @@ const express = require('express');
 
 const app = express();
 
-// Schedule tasks to be run on the server.
-// cron.schedule('10 1 * * *', function() {
-//     console.log('running cron job');
-//     puppet();
-// });
+//Schedule tasks to be run on the server.
+cron.schedule('10 1 * * *', function() {
+    console.log('running cron job');
+    puppet();
+});
 
 app.listen(process.env.PORT);
 
@@ -17,7 +17,6 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 console.log(`Your port is ${process.env.PORT}`);
-console.log("your name is "+ process.env.MYNAME);
 
 //nodemailer transporter
 const transporter = nodemailer.createTransport({
