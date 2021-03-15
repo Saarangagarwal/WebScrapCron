@@ -1,0 +1,26 @@
+{
+  "name": "walmartrateextractor",
+  "version": "1.0.0",
+  "description": "Get informed of the Walmart rates daily by email in-order to stay on top of great offers on selected products. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "walmart",
+    "cron",
+    "canada",
+    "email",
+    "offer",
+    "rate"
+  ],
+  "author": "Saarang Agarwal",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "node-cron": "^2.0.3",
+    "nodemailer": "^6.5.0",
+    "puppeteer": "^8.0.0"
+  }
+}
