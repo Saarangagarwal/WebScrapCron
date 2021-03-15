@@ -17,6 +17,7 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 console.log(`Your port is ${process.env.PORT}`);
+console.log("your name is "+ process.env.MYNAME);
 
 //nodemailer transporter
 const transporter = nodemailer.createTransport({
